@@ -1,10 +1,10 @@
 package org.example.nivell1;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Sale {
-
     private List<Product> products;
     private double totalPrice;
 
@@ -25,7 +25,8 @@ public class Sale {
         for (Product product : products) {
             totalPrice += product.getPrice();
         }
-        System.out.println("The total price is: " + totalPrice + "€");
+        DecimalFormat df = new DecimalFormat("#.00");
+        System.out.println("The total price is: " + df.format(totalPrice) + "€");
     }
 
 }

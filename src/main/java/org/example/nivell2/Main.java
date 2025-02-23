@@ -13,8 +13,8 @@ public class Main {
         float discount = TicketManager.readFloat("Enter your discount in decimals");
         System.out.println("You entered: " + discount);
 
-        double distance = TicketManager.readDouble("Enter the estimated travel time");
-        System.out.println("You entered: " + distance);
+        double price = TicketManager.readDouble("Enter the price of the ticket");
+        System.out.println("You entered: " + price);
 
         char initial = TicketManager.readChar("Enter your first name initial");
         System.out.println("You entered: " + initial);

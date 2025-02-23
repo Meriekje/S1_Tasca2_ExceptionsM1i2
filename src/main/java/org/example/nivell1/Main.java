@@ -9,15 +9,15 @@ public class Main {
 
         try {
             sale.calculateTotal();
-        }catch (EmptySaleException e) {
+        } catch (EmptySaleException e) {
             System.out.println(e.getMessage());
         }
 
-        sale.addProduct(new Product("Computer", 500));
-        sale.addProduct(new Product("Mouse", 10));
+        sale.addProduct(new Product("Computer", 500.002));
+        sale.addProduct(new Product("Mouse", 10.2));
         try {
             sale.calculateTotal();
-        }catch (EmptySaleException e) {
+        } catch (EmptySaleException e) {
             System.out.println(e.getMessage());
         }
 
@@ -26,7 +26,7 @@ public class Main {
         numbers.add(20);
 
         try {
-            System.out.println(numbers.get(5));
+            System.out.println(numbers.get(0));
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Error: Access out of the list limits");
         }

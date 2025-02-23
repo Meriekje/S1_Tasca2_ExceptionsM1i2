@@ -93,7 +93,8 @@ public class TicketManager {
                 } else if (input.equals("n")) {
                     return false;
                 } else {
-                    throw new CustomException("Invalid input. Please enter 'y' for yes or 'n' for no.");                }
+                    throw new CustomException("Invalid input. Please enter 'y' for yes or 'n' for no.");
+                }
             } catch (CustomException e) {
                 System.out.println(e.getMessage());
                 scanner.nextLine();

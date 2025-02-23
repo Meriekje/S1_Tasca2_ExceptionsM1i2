@@ -5,7 +5,7 @@ public class Product {
     private double price;
 
     public Product(String name, double price) {
-        this.name  = name;
+        this.name = name;
         this.price = price;
     }
 
@@ -15,7 +15,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return name + " - " + price + "€";
+        return name + " - " + String.format("%.2f", price) + "€";
     }
 
 }
